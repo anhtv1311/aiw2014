@@ -31,6 +31,9 @@ gem 'devise'
 # ActiveAdmin
 gem 'activeadmin', github: 'activeadmin'
 
+# TZ Info
+gem 'tzinfo-data'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
