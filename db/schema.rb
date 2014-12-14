@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209033450) do
+ActiveRecord::Schema.define(version: 20141213102002) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -47,11 +47,12 @@ ActiveRecord::Schema.define(version: 20141209033450) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "arts", force: true do |t|
-    t.string   "category"
-    t.text     "description"
-    t.string   "url"
     t.string   "name"
     t.string   "author"
+    t.string   "category"
+    t.string   "description"
+    t.text     "content"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

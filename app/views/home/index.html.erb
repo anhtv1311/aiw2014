@@ -1,30 +1,6 @@
 
-<div class="navbar-wrapper">
-  <div class="container">
+<!--<class="homepage">-->
 
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">DHA+ AIW Final Project</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-  </div>
-</div>
 
 
 <!-- Carousel
@@ -75,11 +51,11 @@
     </div>
   </div>
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><img src=<%=image_path("images\sprite_prev.png")%> alt=""></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><img src=<%=image_path("images\sprite_next.png")%> alt=""></span>
     <span class="sr-only">Next</span>
   </a>
 
@@ -95,31 +71,34 @@
   <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="col-lg-4">
-      <img class="img-circle" src=<%=image_path("images/Vangogh.jpg")%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
-      <h2>Phục Hưng</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis
-        euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi
-        leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-        cursus magna.</p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      <img class="img-circle" src=<%=image_path(@phuc_hung.image)%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
+      <br>
+      <h1>Phục Hưng</h1>
+      <br>
+      <p>
+      <p class="text-justify">Phục Hưng -tiếng Pháp: Renaissance, Phát âm tiếng Pháp: [ʁənɛsɑ̃ːs,]trong tiếng Ý: Rinascimento, có nghĩa là được sinh ra lần nữa). Phong cách sáng tác nghệ thuật thời kì phục hưng là một phong trào văn hóa bao phủ giai đoạn từ thế kỷ 14 đến thế kỷ 17, khởi đầu tại Firenze (Ý)vào Hậu kỳ Trung Đại, sau đó lan rộng ra phần còn lại của châu Âu ở những quy mô và mức độ khác nhau.Phục Hưng đã tác động sâu sắc tới đời sống trí thức châu Âu trong thời sơ kỳ hiện đại.</p>
+      <br>
+     <!-- <p><a class="btn btn-default" href="#" role="button">Thông tin chi tiết »</a></p>-->
+      <p><%=link_to "Thông tin chi tiết »", home_phuchung_path %></p>
+
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
-      <img class="img-circle" src=<%=image_path("images/Vangogh.jpg")%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
-      <h2>Cận Đại</h2>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor
-        ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus
-        sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-        mauris condimentum nibh.</p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      <img class="img-circle" src=<%=image_path(@can_dai.image)%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
+      <br>
+      <h1>Cận Đại</h1>
+      <br>
+      <p class="text-justify">Thời cận đại thường được dùng để chỉ khoảng thời gian trong lịch sử Âu châu khoảng cuối thế kỷ 18 đến đầu thế kỷ 20). Tuỳ theo cách nhìn, thời cận đại lại được chia ra thành những thời kỳ nhỏ:thời kỳ quân chủ chuyên chế (hay thời kỳ Barock) và đi liền với nó là thời kỳ Khai minh hay thế kỷ Ánh sáng (khoảng 1650 – 1789); đại cách mạng Pháp (1789 – 1815).Nhiều tác phẩm nổi tiếng trong lịch sử nhân loại trong thời kì này được trưng bày trong các bảo tàng lớn.</p>
+      <br>
+      <p><%=link_to "Thông tin chi tiết »",home_candai_path%></p>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
-      <img class="img-circle" src=<%=image_path("images/Vangogh.jpg")%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
-      <h2>Hiện đại</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis
-        in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-        ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      <img class="img-circle" src=<%=image_path(@duong_dai.image)%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
+      <br>
+      <h1>Đương đại</h1>
+      <br>
+      <p class="text-justify">Khái niệm thời đương đại dùng để chỉ khoảng thời gian trong lịch sử nhân loại mà có sự chuyển biến sâu sắc và vô cùng mạnh mẽ trong hầu hết tất cả các lĩnh vục như khoa học, công nghệ, văn hóa, điêu khắc kiến trúc, hội họa và cả chính trị.Trong khoảng thời gian cuối thế kỉ 19 và đầu thế kỉ 20, sự thay đổi mà chủ nghĩa hiện đại mang lại không những ảnh hưởng sâu sắc tới tất cả các lĩnh vực ở châu Âu và châu Mỹ mà còn trên phạm vi toàn cầu bao gồm cả châu Á. </p>
+      <br>
+      <p><%=link_to "Thông tin chi tiết »",home_duongdai_path%></p>
     </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
 
@@ -130,14 +109,14 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Người đàn bà và con chồn <span class="text-muted">Leonardo Da Vinci</span></h2>
+      <h2 class="featurette-heading">Người đàn bà và con chồn <span class="text-muted"><br>Leonardo Da Vinci</span></h2>
       <p class="lead">Donec ullamcorper nulla non metus auctor
         fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
         commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
         tellus ac cursus commodo.</p>
     </div>
     <div class="col-md-5">
-      <img  src=<%=image_path("images/Vangogh.jpg")%> class="featurette-image_img-responsive" data-src="holder.js/500x500/auto" alt="500x500">
+      <img  src=<%=image_path("images/Vangogh.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
     </div>
   </div>
 
@@ -145,10 +124,10 @@
 
   <div class="row featurette">
     <div class="col-md-5">
-      <img src=<%=image_path("images/StarryNight.jpg")%> class="featurette-image_img-responsive" data-src="holder.js/500x500/auto" alt="500x500">
+      <img src=<%=image_path("images/StarryNight.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
     </div>
     <div class="col-md-7">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted"><br>See for yourself.</span></h2>
       <p class="lead">Donec ullamcorper nulla non metus auctor
         fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
         commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
@@ -160,14 +139,14 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Thiếu nữ bên hoa huệ <span class="text-muted">Tô Ngọc Vân</span></h2>
+      <h2 class="featurette-heading">Thiếu nữ bên hoa huệ <span class="text-muted"><br>Tô Ngọc Vân</span></h2>
       <p class="lead">Donec ullamcorper nulla non metus auctor
         fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
         commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
         tellus ac cursus commodo.</p>
     </div>
     <div class="col-md-5">
-      <img src=<%=image_path("images/thieu_nu_ben_hoa_hue.jpg")%> class="featurette-image_img-responsive" data-src="holder.js/500x500/auto" alt="500x500">
+      <img src=<%=image_path("images/thieu_nu_ben_hoa_hue.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
     </div>
   </div>
 
@@ -175,13 +154,5 @@
 
   <!-- /END THE FEATURETTES -->
 
-
-  <!-- FOOTER -->
-  <footer>
-    <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>© 2014 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-  </footer>
-
 </div><!-- /.container -->
-
-<div data-original-title="Copy to clipboard" title="" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" class="global-zeroclipboard-container" id="global-zeroclipboard-html-bridge">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" height="100%" width="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1417014498865">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">         <embed src="home_files/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" scale="exactfit" height="100%" width="100%">                </object></div><svg style="visibility: hidden; position: absolute; top: -100%; left: -100%;" preserveAspectRatio="none" viewBox="0 0 500 500" height="500" width="500"><defs></defs><text style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle" y="23" x="0">500x500</text></svg>
+<!--FOOTER-->
