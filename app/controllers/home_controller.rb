@@ -18,7 +18,8 @@ class HomeController < ApplicationController
     @duong_dai=Art.all.where('category = "Đương đại"').order('created_at DESC').first
   end
   def duongdai
-
+    @phuc_hung=Art.all.where('category = "Phục hưng"').order('created_at DESC').first
+    @can_dai=Art.all.where('category = "Cận đại"').order('created_at DESC').first
   end
 
   def search
