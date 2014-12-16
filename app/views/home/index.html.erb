@@ -15,39 +15,12 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src=<%=image_path("images/Vangogh.jpg")%> alt="Firstslide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Example headline.</h1>
-          <p>Note: If you're viewing this page via a <code>file://</code>
-            URL, the "next" and "previous" Glyphicon buttons on the left and right
-            might not load/display properly due to web browser security rules.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-        </div>
-      </div>
     </div>
     <div class="item">
       <img src=<%=image_path("images/aten.jpg")%> alt="Secondslide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget
-            quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor
-            id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-        </div>
-      </div>
     </div>
     <div class="item">
       <img src=<%=image_path("images/StarryNight.jpg")%> alt="Thirdslide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget
-            quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor
-            id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-        </div>
-      </div>
     </div>
   </div>
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -69,81 +42,37 @@
 <div class="container marketing">
 
   <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-lg-4">
-      <img class="img-circle" src=<%=image_path(@phuc_hung.image)%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
-      <br>
-      <h1>Phục Hưng</h1>
-      <br>
-      <p>
-      <p class="text-justify">Phục Hưng -tiếng Pháp: Renaissance, Phát âm tiếng Pháp: [ʁənɛsɑ̃ːs,]trong tiếng Ý: Rinascimento, có nghĩa là được sinh ra lần nữa). Phong cách sáng tác nghệ thuật thời kì phục hưng là một phong trào văn hóa bao phủ giai đoạn từ thế kỷ 14 đến thế kỷ 17, khởi đầu tại Firenze (Ý)vào Hậu kỳ Trung Đại, sau đó lan rộng ra phần còn lại của châu Âu ở những quy mô và mức độ khác nhau.Phục Hưng đã tác động sâu sắc tới đời sống trí thức châu Âu trong thời sơ kỳ hiện đại.</p>
-      <br>
-     <!-- <p><a class="btn btn-default" href="#" role="button">Thông tin chi tiết »</a></p>-->
-      <p><%=link_to "Thông tin chi tiết »", home_phuchung_path %></p>
-
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="img-circle" src=<%=image_path(@can_dai.image)%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
-      <br>
-      <h1>Cận Đại</h1>
-      <br>
-      <p class="text-justify">Thời cận đại thường được dùng để chỉ khoảng thời gian trong lịch sử Âu châu khoảng cuối thế kỷ 18 đến đầu thế kỷ 20). Tuỳ theo cách nhìn, thời cận đại lại được chia ra thành những thời kỳ nhỏ:thời kỳ quân chủ chuyên chế (hay thời kỳ Barock) và đi liền với nó là thời kỳ Khai minh hay thế kỷ Ánh sáng (khoảng 1650 – 1789); đại cách mạng Pháp (1789 – 1815).Nhiều tác phẩm nổi tiếng trong lịch sử nhân loại trong thời kì này được trưng bày trong các bảo tàng lớn.</p>
-      <br>
-      <p><%=link_to "Thông tin chi tiết »",home_candai_path%></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="img-circle" src=<%=image_path(@duong_dai.image)%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
-      <br>
-      <h1>Đương đại</h1>
-      <br>
-      <p class="text-justify">Khái niệm thời đương đại dùng để chỉ khoảng thời gian trong lịch sử nhân loại mà có sự chuyển biến sâu sắc và vô cùng mạnh mẽ trong hầu hết tất cả các lĩnh vục như khoa học, công nghệ, văn hóa, điêu khắc kiến trúc, hội họa và cả chính trị.Trong khoảng thời gian cuối thế kỉ 19 và đầu thế kỉ 20, sự thay đổi mà chủ nghĩa hiện đại mang lại không những ảnh hưởng sâu sắc tới tất cả các lĩnh vực ở châu Âu và châu Mỹ mà còn trên phạm vi toàn cầu bao gồm cả châu Á. </p>
-      <br>
-      <p><%=link_to "Thông tin chi tiết »",home_duongdai_path%></p>
-    </div><!-- /.col-lg-4 -->
-  </div><!-- /.row -->
-
-
+  <%= render 'layouts/category'%>
   <!-- START THE FEATURETTES -->
 
   <hr class="featurette-divider">
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Người đàn bà và con chồn <span class="text-muted"><br>Leonardo Da Vinci</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor
-        fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-        commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-        tellus ac cursus commodo.</p>
+      <h2 class="featurette-heading"> <%=@phuc_hung.name%> <span class="text-muted"><br><%=@phuc_hung.author%></span></h2><br>
+      <p class="lead"><%=@phuc_hung.description%></p>
     </div>
     <div class="col-md-5">
-      <img  src=<%=image_path("images/Vangogh.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
+      <img src=<%=image_path(@phuc_hung.image)%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
     </div>
   </div>
 
   <hr class="featurette-divider">
-
   <div class="row featurette">
     <div class="col-md-5">
-      <img src=<%=image_path("images/StarryNight.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
+      <img src=<%=image_path(@can_dai.image)%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
     </div>
     <div class="col-md-7">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted"><br>See for yourself.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor
-        fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-        commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-        tellus ac cursus commodo.</p>
+      <h2 class="featurette-heading"><%=@can_dai.name%> <span class="text-muted"><br><%=@can_dai.author%></span></h2><br>
+      <p class="lead"><%=@can_dai.description%></p>
     </div>
   </div>
 
   <hr class="featurette-divider">
-
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Thiếu nữ bên hoa huệ <span class="text-muted"><br>Tô Ngọc Vân</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor
-        fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-        commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-        tellus ac cursus commodo.</p>
+      <h2 class="featurette-heading"><%=@duong_dai.name%> <span class="text-muted"><br><%=@duong_dai.author%></span></h2><br>
+      <p class="lead"><%=@duong_dai.description%></p>
     </div>
     <div class="col-md-5">
       <img src=<%=image_path("images/thieu_nu_ben_hoa_hue.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">

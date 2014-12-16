@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-lg-4">
+    <img class="img-circle" src=<%=image_path(@phuc_hung.image)%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
+    <br>
+    <h1>Phục Hưng</h1>
+    <br>
+    <p>
+    <p class="text-justify">Phục Hưng -tiếng Pháp: Renaissance, Phát âm tiếng Pháp: [ʁənɛsɑ̃ːs,]trong tiếng Ý: Rinascimento, có nghĩa là được sinh ra lần nữa). Phong cách sáng tác nghệ thuật thời kì phục hưng là một phong trào văn hóa bao phủ giai đoạn từ thế kỷ 14 đến thế kỷ 17, khởi đầu tại Firenze (Ý)vào Hậu kỳ Trung Đại, sau đó lan rộng ra phần còn lại của châu Âu ở những quy mô và mức độ khác nhau.Phục Hưng đã tác động sâu sắc tới đời sống trí thức châu Âu trong thời sơ kỳ hiện đại.</p>
+    <br>
+    <!-- <p><a class="btn btn-default" href="#" role="button">Thông tin chi tiết »</a></p>-->
+    <p><%= button_to "Thông tin chi tiết » ",home_phuchung_path, :method => "get" %></p>
+
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="img-circle" src=<%=image_path(@can_dai.image)%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
+    <br>
+    <h1>Cận Đại</h1>
+    <br>
+    <p class="text-justify">Thời cận đại thường được dùng để chỉ khoảng thời gian trong lịch sử Âu châu khoảng cuối thế kỷ 18 đến đầu thế kỷ 20). Tuỳ theo cách nhìn, thời cận đại lại được chia ra thành những thời kỳ nhỏ:thời kỳ quân chủ chuyên chế (hay thời kỳ Barock) và đi liền với nó là thời kỳ Khai minh hay thế kỷ Ánh sáng (khoảng 1650 – 1789); đại cách mạng Pháp (1789 – 1815).Nhiều tác phẩm nổi tiếng trong lịch sử nhân loại trong thời kì này được trưng bày trong các bảo tàng lớn.</p>
+    <br>
+    <p>
+    <%= button_to "Thông tin chi tiết » ",home_candai_path, :method => "get" %>
+    </p>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="img-circle" src=<%=image_path(@duong_dai.image)%> alt="Genericplaceholderimage" style="width: 140px; height: 140px;">
+    <br>
+    <h1>Đương đại</h1>
+    <br>
+    <p class="text-justify">Khái niệm thời đương đại dùng để chỉ khoảng thời gian trong lịch sử nhân loại mà có sự chuyển biến sâu sắc và vô cùng mạnh mẽ trong hầu hết tất cả các lĩnh vục như khoa học, công nghệ, văn hóa, điêu khắc kiến trúc, hội họa và cả chính trị.Trong khoảng thời gian cuối thế kỉ 19 và đầu thế kỉ 20, sự thay đổi mà chủ nghĩa hiện đại mang lại không những ảnh hưởng sâu sắc tới tất cả các lĩnh vực ở châu Âu và châu Mỹ mà còn trên phạm vi toàn cầu bao gồm cả châu Á. </p>
+    <br>
+    <p><%= button_to "Thông tin chi tiết » ",home_duongdai_path, :method => "get" %></p>
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
