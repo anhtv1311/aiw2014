@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'home/candai', to: "home#candai", as: "home_candai"
   get 'home/duongdai', to: "home#duongdai", as: "home_duongdai"
   get 'home/contact', to: "home#contact", as: "home_contact"
+  get 'home/single/:id', to: "home#single", as: "home_single"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

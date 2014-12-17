@@ -38,7 +38,7 @@
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-
+<!--<div> <img src=<%=image_path("background.jpg")%>>-->
 <div class="container marketing">
 
   <!-- Three columns of text below the carousel -->
@@ -50,7 +50,7 @@
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading"> <%=@phuc_hung.name%> <span class="text-muted"><br><%=@phuc_hung.author%></span></h2><br>
-      <p class="lead"><%=@phuc_hung.description%></p>
+      <p class="text-justify"><%=@phuc_hung.description%></p>
     </div>
     <div class="col-md-5">
       <img src=<%=image_path(@phuc_hung.image)%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
@@ -64,7 +64,7 @@
     </div>
     <div class="col-md-7">
       <h2 class="featurette-heading"><%=@can_dai.name%> <span class="text-muted"><br><%=@can_dai.author%></span></h2><br>
-      <p class="lead"><%=@can_dai.description%></p>
+      <p class="text-justify"><%=@can_dai.description%></p>
     </div>
   </div>
 
@@ -72,7 +72,7 @@
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading"><%=@duong_dai.name%> <span class="text-muted"><br><%=@duong_dai.author%></span></h2><br>
-      <p class="lead"><%=@duong_dai.description%></p>
+      <p class="text-justify"><%=@duong_dai.description%></p>
     </div>
     <div class="col-md-5">
       <img src=<%=image_path("images/thieu_nu_ben_hoa_hue.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">

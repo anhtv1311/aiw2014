@@ -45,92 +45,26 @@
 
 
   <!-- START THE FEATURETTES -->
+  <% @list_arts.each do |art|%>
 
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><%= link_to art.name, home_single_path(art.id)%>
+          <span class="text-muted"><br><%= art.author%></span></h2><br>
+          <p class="text-justify"><%=art.description%></p>
+        </div>
+        <div class="col-md-5">
+          <img  src=<%=art.image%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto"  width="300px" height="250px">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+    <% end %>
 
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Người đàn bà và con chồn <span class="text-muted"><br>Leonardo Da Vinci</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor
-        fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-        commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-        tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img  src=<%=image_path("images/Vangogh.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
-    </div>
-  </div>
+    <%= will_paginate @list_arts %>
 
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-5">
-      <img src=src=<%=image_path("images/StarryNight.jpg")%> class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500">
-    </div>
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted"><br>See for yourself.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor
-        fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-        commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-        tellus ac cursus commodo.</p>
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Thiếu nữ bên hoa huệ <span class="text-muted"><br>Tô Ngọc Vân</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor
-        fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-        commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-        tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img src=src=<%=image_path("images/thieu_nu_ben_hoa_hue.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-5">
-      <img src=src=<%=image_path("images/StarryNight.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
-    </div>
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted"><br>See for yourself.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor
-        fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-        commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-        tellus ac cursus commodo.</p>
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Người đàn bà và con chồn <span class="text-muted"><br>Leonardo Da Vinci</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor
-        fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-        commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-        tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img  src=<%=image_path("images/Vangogh.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
-    </div>
-  </div>
 
   <!-- /END THE FEATURETTES -->
   <!--/Link to new image-->
-  <div class="pagination pagination-centered">
-    <ul class="pager">
-      <li><a href="#">Prev</a></li>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">Next</a></li>
-
-    </ul>
 
   </div>
 </div>

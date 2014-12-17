@@ -46,3 +46,4 @@ gem 'carrierwave'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'will_paginate', '~> 3.0.6'
