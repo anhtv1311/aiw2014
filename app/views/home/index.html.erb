@@ -49,21 +49,21 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading"> <%=@phuc_hung.name%> <span class="text-muted"><br><%=@phuc_hung.author%></span></h2><br>
+      <h2 class="featurette-heading"> <%= link_to @phuc_hung.name, home_single_path(@phuc_hung.id)%> <span class="text-muted"><br><%=@phuc_hung.author%></span></h2><br>
       <p class="text-justify"><%=@phuc_hung.description%></p>
     </div>
     <div class="col-md-5">
-      <img src=<%=image_path(@phuc_hung.image)%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
+      <img src=<%=image_path(@phuc_hung.image)%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" width="300px" height="350px">
     </div>
   </div>
 
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-5">
-      <img src=<%=image_path(@can_dai.image)%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
+      <img src=<%=image_path(@can_dai.image)%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" width="300px" height="350px">
     </div>
     <div class="col-md-7">
-      <h2 class="featurette-heading"><%=@can_dai.name%> <span class="text-muted"><br><%=@can_dai.author%></span></h2><br>
+      <h2 class="featurette-heading"><%= link_to @can_dai.name, home_single_path(@can_dai.id)%> <span class="text-muted"><br><%=@can_dai.author%></span></h2><br>
       <p class="text-justify"><%=@can_dai.description%></p>
     </div>
   </div>
@@ -71,11 +71,11 @@
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading"><%=@duong_dai.name%> <span class="text-muted"><br><%=@duong_dai.author%></span></h2><br>
+      <h2 class="featurette-heading"><%= link_to @duong_dai.name, home_single_path(@duong_dai.id)%> <span class="text-muted"><br><%=@duong_dai.author%></span></h2><br>
       <p class="text-justify"><%=@duong_dai.description%></p>
     </div>
     <div class="col-md-5">
-      <img src=<%=image_path("images/thieu_nu_ben_hoa_hue.jpg")%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" alt="500x500">
+      <img src=<%=@duong_dai.image%> class="featurette-imageimg-responsive" data-src="holder.js/500x500/auto" width="300px" height="350px">
     </div>
   </div>
 
