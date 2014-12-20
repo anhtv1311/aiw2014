@@ -15,15 +15,7 @@
         <ul class="nav navbar-nav">
           <li><%=link_to "Trang chủ", home_index_path%></li>
           <li><%= link_to "Chúng tôi", home_about_path%></li>
-          <li><a href="#contact">Liên hệ</a></li>
-          <li>
-            <div class="search">
-              <form role="form">
-                <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                <i class="fa fa-search"></i>
-                </form>
-            </div>
-          </li>
+          <li><%= link_to "Liên hệ", home_lienhe_path%></li>
         </ul>
       </div>
     </div>
