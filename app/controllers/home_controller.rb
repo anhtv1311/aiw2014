@@ -24,7 +24,9 @@ class HomeController < ApplicationController
     @can_dai=Art.all.where('category = "Cận đại"').order('created_at DESC').first
     @list_arts_duongdai=Art.all.where('category = "Đương đại"').paginate(:page => params[:page], :per_page => 5)
   end
+
   def single
+    begin
     @article =Art.find(params[:id])
     if(@article.category=="Phục hưng")
       @list_arts=Art.all.where('category = "Phục hưng"')
@@ -33,9 +35,9 @@ class HomeController < ApplicationController
     else
       @list_arts=Art.all.where('category = "Đương đại"')
     end
-  end
-  def search
-
+    rescue
+      render "home/about"
+    end
   end
 
   def about
